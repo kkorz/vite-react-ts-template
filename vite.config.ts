@@ -6,6 +6,7 @@ import react from '@vitejs/plugin-react';
 import eslintPlugin from 'vite-plugin-eslint';
 import Pages from 'vite-plugin-pages';
 import AutoImport from 'unplugin-auto-import/vite';
+import Unocss from 'unocss/vite';
 
 export default defineConfig({
   resolve: {
@@ -29,5 +30,8 @@ export default defineConfig({
       imports: ['react', 'react-router-dom'],
       dts: 'src/auto-imports.d.ts',
     }),
+
+    // https://github.com/unocss/unocss
+    Unocss(),
   ],
 });
