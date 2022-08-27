@@ -7,19 +7,8 @@ function Count() {
     <div>
       <p>{count}</p>
       <button
-        className="
-        py-2
-        px-4
-        font-semibold
-        rounded-lg
-        shadow-md
-        text-white
-        bg-green-500
-        hover:bg-green-700
-        border-none
-        cursor-pointer
-      "
-        onClick={() => setCount((count) => count + 1)}
+        className="color-white px-15px py-4px bg-[#096dd9] b-1px rounded-2px font-400 hover:bg-blue-4"
+        onClick={() => setCount(count + 1)}
       >
         Click Me
       </button>
